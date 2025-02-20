@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Variabel dan Tipe Data dalam Javascript</title>
+</head>
+<body>
+  <h1>Informasi Pengguna</h1>
+
+  <script>
+    // Deklarasi variabel dengan berbagai tipe data
+    var nama = "John Doe"; 
+    var umur = 30; 
+    var mahasiswa = true; 
+    var alamat = null; 
+    var hobi = ["Membaca", "Bersepeda", "Berenang"]; 
+    var pekerjaan = "Pengembang"; 
+    var pengalaman = 5; 
+   
+    var pengguna = {
+      nama: nama,
+      umur: umur,
+      mahasiswa: mahasiswa,
+      alamat: alamat,
+      hobi: hobi,
+      pekerjaan: pekerjaan,
+      pengalaman: pengalaman
+    };
+
+    // Menampilkan informasi pengguna
+    document.write("Nama: " + nama + "<br>");
+    document.write("Umur: " + umur + "<br>");
+    document.write("Mahasiswa: " + mahasiswa + "<br>");
+    document.write("Alamat: " + alamat + "<br>");
+    document.write("Hobi: " + hobi + "<br>");
+    document.write("Pekerjaan: " + pekerjaan + "<br>");
+    document.write("Pengalaman: " + pengalaman + " tahun<br>");
+
+    // Contoh operasi dasar
+    var tahunLahir = new Date().getFullYear() - umur;
+    console.log("Tahun Lahir:", tahunLahir);
+
+    // Alert untuk menampilkan pesan
+    alert("Selamat datang, " + nama + "!");
+  </script>
+</body>
+</html>
